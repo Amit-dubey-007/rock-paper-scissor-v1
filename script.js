@@ -8,7 +8,7 @@ let compScore=0;
 let userScore=0;
 
 const genCompChoice = () => {
-  const options = ["rock", "paper", "scissors"];
+  const options = ["rock", "paper", "scissor"];
   const randIdx = Math.floor(Math.random() * 3);
   return options[randIdx];
 };
@@ -73,5 +73,6 @@ choices.forEach((choice) => {
     playGame(userChoice);
   });
 });
+
 
 reset.addEventListener("click",resetGame);
